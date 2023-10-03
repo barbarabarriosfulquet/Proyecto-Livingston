@@ -1,0 +1,38 @@
+# Ignorar archivos temporales
+*~
+*.swp
+*.bak
+
+# Ignorar archivos de caché y sistemas operativos
+.DS_Store
+Thumbs.db
+
+# Ignorar carpetas y archivos de compilación
+/dist/
+/out/
+/build/
+/target/
+
+# Ignorar carpetas y archivos de dependencias
+/node_modules/
+/bower_components/
+
+# Ignorar archivos de configuración local
+.env
+.env.local
+.env.*.local
+
+# Ignorar archivos de registro
+*.log
+npm-debug.log*
+
+# Ignorar archivos de respaldo de editores
+.vscode/
+.idea/
+
+# Ignorar archivos de construcción específicos de lenguajes
+*.class      # Archivos de clases Java
+*.jar        # Archivos JAR
+*.war        # Archivos WAR
+*.ear        # Archivos EAR
+*.swc        # Archivos SWC (compilados de Flash)
