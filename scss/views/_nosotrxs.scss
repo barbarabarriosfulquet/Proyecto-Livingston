@@ -1,0 +1,16 @@
+.nosotrxs__section__container__grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: $spacing-10;
+    margin-bottom: $spacing-10;
+    max-width: 500px;
+    .nosotrxs__section__container__img {
+        max-width: 112px;
+    }
+}
+.nosotrxs__section__container__text__p {
+    font-size: map-get($fonts, section-text);
+    text-align: justify;
+    margin: 0 0 10px 0;
+}

@@ -1,0 +1,74 @@
+.historias__section__title,
+.editoriales__section__title,
+.historias__title,
+.editoriales__title,
+.contacto__title,
+.nosotrxs__title {
+    background-color: map-get($colors, primary-color);
+    font-weight: $font-bold;
+    color: map-get($colors, secondary-color);
+    padding: $spacing-10;
+    margin: 10px 0;
+    font-size: map-get($fonts, title);
+}
+.historias__section__container__article,
+.editoriales__section__container__article {
+    max-width: 355px;
+    margin: 0 10px 10px;
+    padding: $spacing-10;
+    background-color: map-get($colors, historia-color);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+.editoriales__section__container__article {
+    background-color: map-get($colors, editorial-color);
+}
+.historias__section__container__article__img,
+.editoriales__section__container__article__img {
+    border-radius: 5px;
+    width: 100%;
+}
+.historias__section__container__article__title,
+.editoriales__section__container__article__title {
+    margin: 10px 0;
+    font-size: map-get($fonts, section-title);
+    font-weight: $font-bold;
+}
+/* HOME - ARTICLES SUBTITLES */
+.historias__section__container__article__subtitle,
+.editoriales__section__container__article__subtitle {
+    font-size: map-get($fonts, section-subtitle);
+    font-style: italic;
+}
+/* HOME - ARTICLES TEXTS */
+.historias__section__container__article__text,
+.editoriales__section__container__article__text {
+    margin: 0 0 10px;
+    font-size: map-get($fonts, section-text);
+    text-align: justify;
+    height: 72px;
+}
+.historias__section__container__article__button,
+.editoriales__section__container__article__button {
+    display: flex;
+    justify-content: center;
+}
+.historias__section__container__article__button svg,
+.editoriales__section__container__article__button svg {
+    color: map-get($colors, primary-color);
+}
+.historias__section__container__button,
+.editoriales__section__container__button {
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+}
+.editoriales__section__container__button {
+    margin-bottom: 10px;
+}
+.historias__section__container__button__more,
+.editoriales__section__container__button__more {
+    font-size: map-get($fonts, section-button);
+    font-weight: $font-bold;
+}

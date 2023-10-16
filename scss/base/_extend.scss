@@ -1,0 +1,19 @@
+%margin-padding{
+    margin: 0;
+    padding: 0;
+}
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flex-end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+%flex-align-end{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}

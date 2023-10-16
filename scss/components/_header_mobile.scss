@@ -1,0 +1,50 @@
+.header__mobile {
+    background-color: map-get($colors, primary-color);
+    .header__mobile__nav__logo {
+        @extend %flex-center;
+        padding: $spacing-10;
+        .header__mobile__nav__logo__icon {
+            height: 70px;
+            @extend %margin-padding;
+        }
+        .header__mobile__nav__logo__text {
+            color: map-get($colors, secondary-color);
+            font-size: map-get($fonts, logo-mobile);
+            font-weight: $font-bold;
+            margin: 10px 0 0 10px;
+        }
+    }
+}
+.header__mobile__nav__toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 30px;
+    padding: 8px;
+    margin: 10px;
+    .header__mobile__nav__toggle__bar {
+        width: 20px;
+        height: 2px;
+        background-color: map-get($colors, secondary-color);
+        transition: 0.4s;
+    }
+}
+.header__mobile__nav__menu.menu-opened {
+    display: block;
+    padding: 0 18px 0 0;
+    .header__mobile__nav__list {
+        margin: 0 0 10px 0;
+        padding: 0;
+        @extend %flex-align-end;
+        flex-direction: column;
+        .header__mobile__nav__list__item {
+            display: inline-block;
+            .header__mobile__nav__list__link {
+                font-size: map-get($fonts, section-text);
+                color: map-get($colors, secondary-color);
+                text-decoration: none;
+            }
+        }
+    }
+}

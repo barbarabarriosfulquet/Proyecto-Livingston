@@ -1,0 +1,23 @@
+.footer {
+    background-color: map-get($colors, primary-color);
+    padding: 10px;
+    .footer__copyright {
+        color: map-get($colors, secondary-color);
+        font-size: map-get($fonts, section-text);
+        @extend %margin-padding;
+    }
+    .footer__icon {
+        @extend %margin-padding;
+        @extend %flex-center;
+        .footer__icon__img {
+            width: 70px;
+        }
+    }
+    .footer__social {
+        @extend %margin-padding;
+        @extend %flex-end;
+        .footer__social__link {
+            margin-left: $spacing-10;
+        }
+    }
+}

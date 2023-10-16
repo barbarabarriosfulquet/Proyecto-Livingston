@@ -1,0 +1,16 @@
+.footer__dev {
+    background-color: #656565;
+    padding: 0 10px;
+    .footer__dev__copyright {
+        color: map-get($colors, secondary-color);
+        font-size: 11px;
+        @extend %margin-padding;
+    }
+    .footer__dev__social {
+        @extend %margin-padding;
+        @extend %flex-end;
+        .footer__dev__social__link {
+            margin-left: 10px;
+        }
+    }
+}

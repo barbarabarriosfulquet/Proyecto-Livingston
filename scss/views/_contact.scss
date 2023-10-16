@@ -1,0 +1,27 @@
+.contacto__section__address {
+    margin: 10px 0;
+    padding: 0;
+    .contacto__section__address__street,
+    .contacto__section__address__phone,
+    .contacto__section__address__mail {
+        font-size: map-get($fonts, section-text);
+        @extend %margin-padding;
+    }
+}
+.contacto__section__form {
+    margin: 0;
+    .contacto__section__name,
+    .contacto__section__email,
+    .contacto__section__message {
+        margin: 5px 10px;
+        padding: 0;
+        font-size: map-get($fonts, section-text);
+    }
+    .contacto__section__send {
+        @extend %flex-end;
+        margin: 5px 0 10px 0;
+        padding: 0;
+        border: none;
+        background: none;
+    }
+}

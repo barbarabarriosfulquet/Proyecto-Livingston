@@ -1,0 +1,35 @@
+.editoriales__container__article {
+    margin: 0 10px 10px 10px;
+    padding: $spacing-10;
+    background-color: map-get($colors, editorial-color);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    max-width: 355px;
+    .editoriales__container__article__title {
+        font-size: map-get($fonts, title);
+        font-weight: $font-bold;
+    }
+    .editoriales__container__article__subtitle {
+        font-size: map-get($fonts, section-subtitle);
+        font-style: italic;
+    }
+    .editoriales__container__article__editorial {
+        .editoriales__container__article__img {
+            display: block;
+            margin: 0;
+            max-width: 335px;
+        }
+    }
+}
+.editoriales__container__article__dek,
+.editoriales__container__article__text,
+.editoriales__container__article__text__bold {
+    font-size: map-get($fonts, section-text);
+    text-align: justify;
+    margin: 10px 0 10px 0;
+    line-height: 20px;
+}
+.editoriales__container__article__dek,
+.editoriales__container__article__text__bold {
+    font-weight: $font-bold;
+}

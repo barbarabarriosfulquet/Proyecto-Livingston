@@ -1,0 +1,21 @@
+.slider__mobile {
+    @extend %flex-center;
+    margin: 0px;
+    .slider__mobile__row {
+        margin-top: 10px;
+        @extend %flex-center;
+        flex-direction: column;
+        .slider__mobile__images {
+            padding: 0 10 0 10;
+            .slider__mobile__images__img {
+                width: 351px;
+                border: 2px solid #000;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.slider__desktop {
+    @extend %flex-center;
+}

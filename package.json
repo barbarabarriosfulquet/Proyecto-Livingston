@@ -1,5 +1,16 @@
 {
   "dependencies": {
     "bootstrap": "^5.2.3"
-  }
+  },
+  "name": "proyecto_livingston",
+  "description": "SEGUNDA PRE-ENTREGA FORMATO Link al repositorio en GitHub donde está hosteado el proyecto.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": []
 }
