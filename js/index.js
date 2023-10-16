@@ -22,29 +22,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// SLIDER
-const sliderImages = document.querySelectorAll(".slider img");
-let slideIndex = 0;
-let intervalId;
+// SLIDER MOBILE
+const sliderMobileImages = document.querySelectorAll(".slider__mobile__images__img");
+let slideMobileIndex = 0;
+let intervalMobileId;
 
-// SLIDER - ADVANCE
-function nextSlide() {
-    slideIndex++;
-    showSlides();
+// SLIDER MOBILE - ADVANCE
+function nextMobileSlide() {
+    slideMobileIndex++;
+    showMobileSlides();
 }
 
-// SLIDER - DISPLAY
-function showSlides() {
-    if (slideIndex < 0) {
-        slideIndex = sliderImages.length - 1;
+// SLIDER MOBILE - DISPLAY
+function showMobileSlides() {
+    if (slideMobileIndex < 0) {
+        slideMobileIndex = sliderMobileImages.length - 1;
     }
 
-    if (slideIndex >= sliderImages.length) {
-        slideIndex = 0;
+    if (slideMobileIndex >= sliderMobileImages.length) {
+        slideMobileIndex = 0;
     }
 
-    sliderImages.forEach((slide, index) => {
-        if (index === slideIndex) {
+    sliderMobileImages.forEach((slide, index) => {
+        if (index === slideMobileIndex) {
             slide.style.display = "block";
         } else {
             slide.style.display = "none";
@@ -52,22 +52,72 @@ function showSlides() {
     });
 }
 
-// SLIDER - SLIDING
-function startSlider() {
-    intervalId = setInterval(nextSlide, 3000);
+// SLIDER MOBILE - SLIDING
+function startMobileSlider() {
+    intervalMobileId = setInterval(nextMobileSlide, 3000);
 }
 
-// SLIDER - PAUSE
-sliderImages.forEach((slide) => {
+// SLIDER MOBILE - PAUSE
+sliderMobileImages.forEach((slide) => {
     slide.addEventListener("mouseenter", () => {
-        clearInterval(intervalId);
+        clearInterval(intervalMobileId);
     });
 
     slide.addEventListener("mouseleave", () => {
-        startSlider();
+        startMobileSlider();
+    });
+});
+
+// SLIDER MOBILE - DISPLAY FIRST
+showMobileSlides();
+startMobileSlider();
+
+// SLIDER DESKTOP
+const sliderDesktopImages = document.querySelectorAll(".slider__desktop__images__img");
+let slideDesktopIndex = 0;
+let intervalDesktopId;
+
+// SLIDER DESKTOP - ADVANCE
+function nextDesktopSlide() {
+    slideDesktopIndex++;
+    showDesktopSlides();
+}
+
+// SLIDER DESKTOP - DISPLAY
+function showDesktopSlides() {
+    if (slideDesktopIndex < 0) {
+        slideDesktopIndex = sliderDesktopImages.length - 1;
+    }
+
+    if (slideDesktopIndex >= sliderDesktopImages.length) {
+        slideDesktopIndex = 0;
+    }
+
+    sliderDesktopImages.forEach((slide, index) => {
+        if (index === slideDesktopIndex) {
+            slide.style.display = "block";
+        } else {
+            slide.style.display = "none";
+        }
+    });
+}
+
+// SLIDER DESKTOP - SLIDING
+function startDesktopSlider() {
+    intervalDesktopId = setInterval(nextDesktopSlide, 3000);
+}
+
+// SLIDER DESKTOP - PAUSE
+sliderDesktopImages.forEach((slide) => {
+    slide.addEventListener("mouseenter", () => {
+        clearInterval(intervalDesktopId);
+    });
+
+    slide.addEventListener("mouseleave", () => {
+        startDesktopSlider();
     });
 });
 
 // SLIDER - DISPLAY FIRST
-showSlides();
-startSlider();
+showDesktopSlides();
+startDesktopSlider();
