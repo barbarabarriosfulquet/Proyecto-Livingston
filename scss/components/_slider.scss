@@ -1,12 +1,15 @@
 .slider__mobile {
     @extend %flex-center;
-    margin: 0px;
+    margin: 0;
+
     .slider__mobile__row {
         margin-top: 10px;
         @extend %flex-center;
         flex-direction: column;
+
         .slider__mobile__images {
-            padding: 0 10 0 10;
+            padding: 0px;
+
             .slider__mobile__images__img {
                 width: 351px;
                 border: 2px solid #000;
@@ -18,4 +21,20 @@
 
 .slider__desktop {
     @extend %flex-center;
+    margin: 0;
+
+    .slider__desktop__row {
+        margin-top: 10px;
+        @extend %flex-center;
+
+        .slider__desktop__images {
+            padding: 0px;
+
+            .slider__desktop__images__img {
+                width: 351px;
+                border: 2px solid #000;
+                border-radius: 5px;
+            }
+        }
+    }
 }

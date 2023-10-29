@@ -1,12 +1,15 @@
 .header__desktop {
     background-color: map-get($colors, primary-color);
+
     .header__desktop__nav__logo {
         @extend %flex-center;
         padding: $spacing-10;
+
         .header__desktop__nav__logo__icon {
             height: 90px;
             @extend %margin-padding;
         }
+
         .header__desktop__nav__logo__text {
             max-width: 215px;
             color: map-get($colors, secondary-color);
@@ -15,9 +18,11 @@
             margin: 10px 0 0 10px;
         }
     }
+
     .header__desktop__nav__menu {
         background-color: map-get($colors, secondary-color);
         padding: 10px;
+
         .header__desktop__nav__list {
             list-style: none;
             @extend %margin-padding;
@@ -25,13 +30,16 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
+
             .header__desktop__nav__list__item {
                 display: inline;
+
                 .header__desktop__nav__list__link {
                     font-size: map-get($fonts, section-text);
                     color: map-get($colors, primary-color);
                     text-decoration: none;
                     font-weight: $font-bold;
+
                     &:hover {
                         color: map-get($colors, hover-color);
                     }
