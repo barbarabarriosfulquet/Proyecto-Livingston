@@ -1,4 +1,5 @@
 .header__desktop {
+    position: fixed;
     background-color: map-get($colors, primary-color);
 
     .header__desktop__nav__logo {
