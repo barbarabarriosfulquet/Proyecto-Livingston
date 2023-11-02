@@ -7,6 +7,17 @@
         display: none;
     }
 
+    .historias__section__title,
+    .editoriales__section__title,
+    .historias__title,
+    .editoriales__title,
+    .nosotrxs__title,
+    .contacto__title,
+    .footer,
+    .footer__dev {
+        padding: 10px 18px;
+    }
+
     .historias__title,
     .editoriales__title,
     .nosotrxs__title,
@@ -15,12 +26,11 @@
     }
 
     .editoriales__container__article {
-        margin: 0 10px 10px 10px;
-        padding: 10px;
+        margin: 0 18px 10px 18px;
         background-color: #dcd8f2;
         border-radius: 5px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-        max-width: 1820px;
+        max-width: 1164px;
     }
 
     .editoriales__container__article__editorial {
@@ -32,7 +42,6 @@
     }
 
     .editoriales__container__article__dek {
-        font-size: 14px;
         text-align: justify;
         margin: 0 0 10px 10px;
         line-height: 20px;
@@ -43,8 +52,14 @@
         margin: 10px 0 10px 10px;
     }
 
+    .historias__section__container__article,
+    .editoriales__section__container__article {
+        max-width: 380px;
+    }
+
     .nosotrxs__section__container {
         display: flex;
+        padding: 0px 8px;
     }
 
     .nosotrxs__section__container__img {
@@ -52,7 +67,12 @@
     }
 
     .nosotrxs__section__container__text {
-        margin: 0 0 0 10px;
+        margin: 0px;
+    }
+
+    .contacto__section__message {
+        resize: none;
+        height: 300px;
     }
 }
 

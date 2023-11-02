@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contáctanos">
-    <meta name="keywords" content="arquitectura, arquitectura de familia, diseño interior, proyecto livingstone, livingstone, rodolfo livingston, blog, contacto">
+    <meta name="keywords"
+        content="arquitectura, arquitectura de familia, diseño interior, proyecto livingstone, livingstone, rodolfo livingston, blog, contacto">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Proyecto Livingstone | Contacto</title>
+    <title>Proyecto Livingston | Contacto</title>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 <!-- LOGO -->
                 <div class="col-10 header__mobile__nav__logo">
                     <img class="header__mobile__nav__logo__icon" src="../images/icon.webp" alt="icon">
-                    <h1 class="header__mobile__nav__logo__text">PROYECTO LIVINGSTONE</h1>
+                    <h1 class="header__mobile__nav__logo__text">PROYECTO LIVINGSTON</h1>
                 </div>
                 <!-- NAVIGATION BUTTON -->
                 <div class="col-2 d-md-none header__mobile__nav__toggle" id="menu-button">
@@ -55,7 +56,7 @@
                 <!-- LOGO -->
                 <div class="col-12 header__desktop__nav__logo">
                     <img class="header__desktop__nav__logo__icon" src="../images/icon.webp" alt="icon">
-                    <h1 class="header__desktop__nav__logo__text">PROYECTO LIVINGSTONE</h1>
+                    <h1 class="header__desktop__nav__logo__text">PROYECTO LIVINGSTON</h1>
                 </div>
                 <!-- NAVIGATION BAR -->
                 <div class="col-12 header__desktop__nav__menu">
@@ -87,40 +88,37 @@
                 <h2 class="col-12 contacto__title">CONTÁCTANOS</h2>
             </div>
             <div class="row">
-                <div class="col-12 contacto__frame">
+                <div class="col-12 col-md-6 contacto__frame">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6658.138297350174!2d-70.63094960275325!3d-33.44750494356273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c57e771fd0c3%3A0xd53d947cb0d1ec6e!2sBarrio%20Italia%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1693998824723!5m2!1ses-419!2scl"
                         width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
+                <div class="col-12 col-md-6 contacto__section">
+                    <div class="row contacto__section__address">
+                        <p class="col-12 contacto__section__address__street">Calle 123, Ciudad, Estado C. P. 12345</p>
+                        <p class="col-12 contacto__section__address__phone">Tel.: (56) 1234 5678</p>
+                        <p class="col-12 contacto__section__address__mail">hola@proyectolivingstone.com</p>
+                    </div>
+                    <form class="row contacto__section__form" action="process_form.php" method="POST">
+                        <label for="name">Nombre y apellido</label>
+                        <input class="col-12 contacto__section__name" type="text" id="name" name="name" required
+                            placeholder="Ingresa tu nombre y apellido">
+                        <label for="email">Correo electrónico</label>
+                        <input class="col-12 contacto__section__email" type="email" id="email" name "email" required
+                            placeholder="Ingresa tu correo electrónico">
+                        <label for="message">Mensaje</label>
+                        <textarea class="col-12 contacto__section__message" id="message" name="message" required
+                            placeholder="Escribe aquí tu mensaje"></textarea>
+                        <div class="col-12 d-flex contacto__section__send">
+                            <button class="contacto__section__send__button" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="container-fluid contacto__section">
-            <div class="row contacto__section__address">
-                <p class="col-12 contacto__section__address__street">Calle 123, Ciudad, Estado C. P. 12345</p>
-                <p class="col-12 contacto__section__address__phone">Tel.: (56) 1234 5678</p>
-                <p class="col-12 contacto__section__address__mail">hola@proyectolivingstone.com</p>
-            </div>
-            <form class="row contacto__section__form" action="process_form.php" method="POST">
-                <label for="name"></label>
-                <input class="col-12 contacto__section__name" type="text" id="name" name="name" required
-                    placeholder="Nombre y apellido">
-                <label for="email"></label>
-                <input class="col-12 contacto__section__email" type="email" id="email" name="email" required
-                    placeholder="Correo electrónico">
-                <label for="message"></label>
-                <textarea class="col-12 contacto__section__message" id="message" name="message" required
-                    placeholder="Escribe aquí tu mensaje"></textarea>
-                <button class="col-12 contacto__section__send" type="submit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-send" viewBox="0 0 16 16">
-                        <path
-                            d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
-                    </svg>
-                </button>
-            </form>
-        </div>
+
     </main>
     <footer>
         <!-- FOOTER SECTION -->
@@ -168,7 +166,7 @@
                                 d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                         </svg>
                     </a>
-                    <a class="footer__dev__social__link" href="https://www.linkedin.com/in/barbara-barrios-fulquet/"
+                    <a class="footer__dev__social__link" href="https://www.linkedin.com/in/barbarabarriosfulquet/"
                         target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
                             class="bi bi-linkedin" viewBox="0 0 16 16">

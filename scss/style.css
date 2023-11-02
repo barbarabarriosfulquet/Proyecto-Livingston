@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap");
-.footer__dev .footer__dev__social, .footer__dev .footer__dev__copyright, .footer .footer__social, .footer .footer__icon, .footer .footer__copyright, .contacto__section__address .contacto__section__address__street,
+.footer__dev .footer__dev__social, .footer__dev .footer__dev__copyright, .footer .footer__social, .footer .footer__icon, .footer .footer__copyright, .contacto__section__form label, .contacto__section__address .contacto__section__address__street,
 .contacto__section__address .contacto__section__address__phone,
-.contacto__section__address .contacto__section__address__mail, .header__desktop .header__desktop__nav__menu .header__desktop__nav__list, .header__desktop .header__desktop__nav__logo .header__desktop__nav__logo__icon, .header__mobile .header__mobile__nav__logo .header__mobile__nav__logo__icon {
+.contacto__section__address .contacto__section__address__mail, .header__desktop .header__desktop__nav__menu .header__desktop__nav__list, .header__desktop .header__desktop__nav__logo .header__desktop__nav__logo__icon, .header__mobile__nav .header__mobile__nav__logo .header__mobile__nav__logo__icon {
   margin: 0;
   padding: 0;
 }
 
-.footer .footer__icon, .slider__desktop .slider__desktop__row, .slider__desktop, .slider__mobile .slider__mobile__row, .slider__mobile, .header__desktop .header__desktop__nav__logo, .header__mobile .header__mobile__nav__logo {
+.footer .footer__icon, .contacto__section__form .contacto__section__send .contacto__section__send__button, .slider__desktop .slider__desktop__row, .slider__desktop, .slider__mobile .slider__mobile__row, .slider__mobile, .header__desktop .header__desktop__nav__logo, .header__mobile__nav .header__mobile__nav__logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer__dev .footer__dev__social, .footer .footer__social, .contacto__section__form .contacto__section__send {
+.footer__dev .footer__dev__social, .footer .footer__social {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -42,16 +42,16 @@ main {
   align-items: center;
 }
 
-.header__mobile {
+.header__mobile__nav {
   background-color: #000;
 }
-.header__mobile .header__mobile__nav__logo {
+.header__mobile__nav .header__mobile__nav__logo {
   padding: 10px;
 }
-.header__mobile .header__mobile__nav__logo .header__mobile__nav__logo__icon {
+.header__mobile__nav .header__mobile__nav__logo .header__mobile__nav__logo__icon {
   height: 70px;
 }
-.header__mobile .header__mobile__nav__logo .header__mobile__nav__logo__text {
+.header__mobile__nav .header__mobile__nav__logo .header__mobile__nav__logo__text {
   color: #fff;
   font-size: 22px;
   font-weight: 700;
@@ -111,7 +111,7 @@ main {
 }
 .header__desktop .header__desktop__nav__menu {
   background-color: #fff;
-  padding: 10px;
+  padding: 10px 18px;
 }
 .header__desktop .header__desktop__nav__menu .header__desktop__nav__list {
   list-style: none;
@@ -314,20 +314,53 @@ main {
 }
 
 .contacto__section__form {
-  margin: 0;
+  margin: 0 0 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #000;
+}
+.contacto__section__form label {
+  font-size: 12px;
+  color: #fff;
 }
 .contacto__section__form .contacto__section__name,
 .contacto__section__form .contacto__section__email,
 .contacto__section__form .contacto__section__message {
   margin: 5px 10px;
   padding: 0;
-  font-size: 12px;
+  font-size: 11px;
+  height: 30px;
+}
+.contacto__section__form .contacto__section__name::-moz-placeholder, .contacto__section__form .contacto__section__email::-moz-placeholder, .contacto__section__form .contacto__section__message::-moz-placeholder {
+  padding: 5px;
+}
+.contacto__section__form .contacto__section__name::placeholder,
+.contacto__section__form .contacto__section__email::placeholder,
+.contacto__section__form .contacto__section__message::placeholder {
+  padding: 5px;
+}
+.contacto__section__form .contacto__section__message {
+  height: 100px;
+}
+.contacto__section__form .contacto__section__message::-moz-placeholder {
+  padding: 5px;
+}
+.contacto__section__form .contacto__section__message::placeholder {
+  padding: 5px;
 }
 .contacto__section__form .contacto__section__send {
-  margin: 5px 0 10px 0;
+  justify-content: flex-end;
   padding: 0;
-  border: none;
+}
+.contacto__section__form .contacto__section__send .contacto__section__send__button {
+  margin-top: 5px;
+  padding: 0 5px;
+  width: 47px;
+  border-radius: 5px;
   background: none;
+  font-size: 12px;
+  background-color: #fff;
+  color: #000;
 }
 
 .footer {
@@ -364,6 +397,16 @@ main {
   .slider__mobile {
     display: none;
   }
+  .historias__section__title,
+  .editoriales__section__title,
+  .historias__title,
+  .editoriales__title,
+  .nosotrxs__title,
+  .contacto__title,
+  .footer,
+  .footer__dev {
+    padding: 10px 18px;
+  }
   .historias__title,
   .editoriales__title,
   .nosotrxs__title,
@@ -371,12 +414,11 @@ main {
     margin-top: 156px;
   }
   .editoriales__container__article {
-    margin: 0 10px 10px 10px;
-    padding: 10px;
+    margin: 0 18px 10px 18px;
     background-color: #dcd8f2;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-    max-width: 1820px;
+    max-width: 1164px;
   }
   .editoriales__container__article__editorial {
     display: flex;
@@ -385,7 +427,6 @@ main {
     max-height: 160px;
   }
   .editoriales__container__article__dek {
-    font-size: 14px;
     text-align: justify;
     margin: 0 0 10px 10px;
     line-height: 20px;
@@ -394,14 +435,19 @@ main {
   .editoriales__container__article__text__bold {
     margin: 10px 0 10px 10px;
   }
+  .historias__section__container__article,
+  .editoriales__section__container__article {
+    max-width: 380px;
+  }
   .nosotrxs__section__container {
     display: flex;
+    padding: 0px 8px;
   }
   .nosotrxs__section__container__img {
     max-width: 100%;
   }
   .nosotrxs__section__container__text {
-    margin: 0 0 0 10px;
+    margin: 0px;
   }
 }
 @media (max-width: 768px) {

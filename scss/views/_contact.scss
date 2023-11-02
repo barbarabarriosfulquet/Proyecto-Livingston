@@ -1,6 +1,7 @@
 .contacto__section__address {
     margin: 10px 0;
     padding: 0;
+
     .contacto__section__address__street,
     .contacto__section__address__phone,
     .contacto__section__address__mail {
@@ -8,20 +9,49 @@
         @extend %margin-padding;
     }
 }
+
 .contacto__section__form {
-    margin: 0;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: map-get($colors, primary-color);
+
+    label {
+        @extend %margin-padding;
+        font-size: map-get($fonts, section-text);
+        color: map-get($colors, secondary-color);
+    }
+
     .contacto__section__name,
     .contacto__section__email,
     .contacto__section__message {
         margin: 5px 10px;
         padding: 0;
-        font-size: map-get($fonts, section-text);
+        font-size: map-get($fonts, section-button);
+        height: 30px;
+
+        &::placeholder {
+            padding: 5px;
+        }
     }
+
+    .contacto__section__message {
+        height: 100px;
+    }
+
     .contacto__section__send {
-        @extend %flex-end;
-        margin: 5px 0 10px 0;
+        justify-content: flex-end;
         padding: 0;
-        border: none;
-        background: none;
+        .contacto__section__send__button {
+            @extend %flex-center;
+            margin-top: 5px;
+            padding: 0 5px;
+            width: 47px;
+            border-radius: 5px;
+            background: none;
+            font-size: map-get($fonts, section-text);
+            background-color: map-get($colors, secondary-color);
+            color: map-get($colors, primary-color);
+        }
     }
 }
