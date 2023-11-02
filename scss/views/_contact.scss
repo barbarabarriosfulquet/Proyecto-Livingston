@@ -42,16 +42,23 @@
     .contacto__section__send {
         justify-content: flex-end;
         padding: 0;
+
         .contacto__section__send__button {
             @extend %flex-center;
             margin-top: 5px;
             padding: 0 5px;
             width: 47px;
             border-radius: 5px;
+            border: 2px solid map-get($colors, primary-color);
             background: none;
             font-size: map-get($fonts, section-text);
             background-color: map-get($colors, secondary-color);
             color: map-get($colors, primary-color);
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: map-get($colors, hover-color);
+            }
         }
     }
 }

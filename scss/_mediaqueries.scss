@@ -70,9 +70,17 @@
         margin: 0px;
     }
 
-    .contacto__section__message {
-        resize: none;
-        height: 300px;
+    iframe {
+        height: 450px;
+    }
+
+    .contacto__section {
+        padding: 0 18px 0 0;
+
+        .contacto__section__message {
+            resize: none;
+            height: 200px;
+        }
     }
 }
 
