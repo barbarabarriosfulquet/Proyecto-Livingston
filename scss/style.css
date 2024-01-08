@@ -165,6 +165,7 @@ main {
 
 .historias__section__title,
 .editoriales__section__title,
+.tienda__title,
 .historias__title,
 .editoriales__title,
 .contacto__title,
@@ -247,6 +248,12 @@ main {
 .editoriales__section__container__button__more {
   font-size: 11px;
   font-weight: 700;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.historias__section__container__button__more:hover,
+.editoriales__section__container__button__more:hover {
+  background-color: #ffd05e;
 }
 
 .editoriales__container__article {
@@ -342,12 +349,6 @@ main {
 .contacto__section__form .contacto__section__message {
   height: 100px;
 }
-.contacto__section__form .contacto__section__message::-moz-placeholder {
-  padding: 5px;
-}
-.contacto__section__form .contacto__section__message::placeholder {
-  padding: 5px;
-}
 .contacto__section__form .contacto__section__send {
   justify-content: flex-end;
   padding: 0;
@@ -357,10 +358,15 @@ main {
   padding: 0 5px;
   width: 47px;
   border-radius: 5px;
+  border: 2px solid #000;
   background: none;
   font-size: 12px;
   background-color: #fff;
   color: #000;
+  transition: background-color 0.3s;
+}
+.contacto__section__form .contacto__section__send .contacto__section__send__button:hover {
+  background-color: #ffd05e;
 }
 
 .footer {
@@ -399,6 +405,7 @@ main {
   }
   .historias__section__title,
   .editoriales__section__title,
+  .tienda__title,
   .historias__title,
   .editoriales__title,
   .nosotrxs__title,
@@ -407,6 +414,7 @@ main {
   .footer__dev {
     padding: 10px 18px;
   }
+  .tienda__title,
   .historias__title,
   .editoriales__title,
   .nosotrxs__title,
@@ -448,6 +456,16 @@ main {
   }
   .nosotrxs__section__container__text {
     margin: 0px;
+  }
+  iframe {
+    height: 450px;
+  }
+  .contacto__section {
+    padding: 0 18px 0 0;
+  }
+  .contacto__section .contacto__section__message {
+    resize: none;
+    height: 200px;
   }
 }
 @media (max-width: 768px) {
